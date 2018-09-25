@@ -2,11 +2,46 @@
 <!--
 	Name: Dalton Carter
 	Date Created: 09/15/18
-	Most recent revision: 09/17/18
+	Most recent revision: 09/24/18
 -->
 <html lang="en">
 	<head>
 		<title>Dalton's Diner</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	
+		<style>
+			body {
+				background-color: #6d6a6f;
+			}
+			
+			nav {
+				background-color: #fff;
+				max-width: 1200px;
+				margin: auto;
+				padding: 4px 140px 4px 4px;
+			}
+			
+			nav {
+				max-width: 1200px;
+				margin: auto;
+				padding: 4px 140px 4px 4px;
+			}
+			p {
+				text-align: center;
+				padding: 5px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			#navButtons {
+				text-align: left;
+			}
+			
+			
+			#discription{
+				color: #edeaef;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -15,25 +50,23 @@
 		</header>
 		
 		<nav>
-			<hr />
-			<p><a href="index.html">Home</a>
+			<p id="navButtons"><a href="index.html">Home</a>
 			<a href="menu.html">Menu</a>
 			<a href="contact.html">Contact Us</a>
 			</p>
-			<hr />
 		</nav>
 		
-		<img src="images/burger.jpg" alt="Picture of a cheese burger" height="150">
+		<img style="display: block; margin-left: auto; margin-right:auto; padding-top: 10px" src="images/burger.jpg" alt="Picture of a cheese burger" height="150">
 		
 		<!--Restaurant Description-->
-		<p>Dalton's Diner!<br /> A place where people can go when they want a slice of heaven!<br />
+		<article id="discription">
+			<p>Dalton's Diner!<br /> A place where people can go when they want a slice of heaven!<br />
 			Here at Dalton's Diner our goal is to provide mouth-watering meals that satisfy the customer's hunger,<br />
 			and have them leaving happier than when they came.</p>
-		
+		</article>
 		
 		<footer>
-			<hr />
-			<p>741 Carterway Rd, Arlington, Texas, 76015<br />817-555-0145</p>
+			<p>741 Carter Way Rd, Arlington, Texas, 76015<br />817-555-0145</p>
 		</footer>
 		
 	</body>

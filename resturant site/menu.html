@@ -2,29 +2,78 @@
 <!--
 	Name: Dalton Carter
 	Date Created: 09/15/18
-	Most recent revision: 09/15/18
+	Most recent revision: 09/24/18
 -->
 <html lang="en">
 	<head>
 		<title>Menu</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			table, td, th {
+				padding: 5px 10px;
+			}
+			
+			table{
+				width:90%;
+				margin: auto;
+			}
+			
+			th {
+				font-size: 1.2em;
+				color: #f5f5fe;
+			}
+			
+			tr{
+				color: #dedfcf;
+			}
+			
+			td{
+				color: #d94;
+			}
+			
+			body{
+				background-color: #6d6a6f;
+				
+			}
+			
+			#beverages{
+				width: 50%;
+				margin: auto;
+				background-color: #d89040;
+				margin-bottom: 10px;
+				padding: 0px;
+			}
+			
+			#beverages td {
+				color: #efefef;
+			}
+			
+			#beverages tr:nth-child(odd){
+				background-color: #6d6a6f;
+			}
+		
+			
+			
+			
+			
+		</style>
 	</head>
 	
 	<body>
 		<header>
-			<center><h1>Dalton's Diner</h1></center>
+			<h1>Dalton's Diner</h1>
 		</header>
 		
 		<nav>
-			<hr />
 			<p><a href="index.html">Home</a>
 			<a href="menu.html">Menu</a>
 			<a href="contact.html">Contact Us</a>
 			</p>
-			<hr />
 		</nav>
 		
 		
-		<table style="width:100%";>
+		<table>
 			<!--first row of meals -->
 			<tr>
 				<th>Burger and Fries</th>
@@ -61,9 +110,35 @@
 			</tr>
 		</table>
 		
+		<!--Beverages table-->
+		<table id="beverages">
+			<tr>
+				<th colspan="2">Beverages</th>
+			</tr>
+			
+			<tr>
+				<td>Root Beer</td>
+				<td>$3.00</td>
+			</tr>
+			
+			<tr>
+				<td>Bottled Water</td>
+				<td>$1.25</td>
+			</tr>
+			
+			<tr>
+				<td>Lemonade</td>
+				<td>$1.00</td>
+			</tr>
+			
+			<tr>
+				<td>Iced Tea</td>
+				<td> $1.25</td>
+			</tr>
+		</table>
+		
 		<footer>
-			<hr />
-			<p>741 Carterway Rd, Arlington, Texas, 76015<br />817-555-0145</p>
+			<p>741 Carter Way Rd, Arlington, Texas, 76015<br />817-555-0145</p>
 		</footer>
 		
 	</body>

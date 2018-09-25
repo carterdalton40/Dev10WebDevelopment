@@ -2,7 +2,7 @@
 <!--
 	Name: Dalton Carter
 	Date Created: 09/15/18
-	Most recent revision: 09/15/18
+	Most recent revision: 09/24/18
 -->
 <html lang="en">
 	<head>
@@ -12,35 +12,65 @@
 	<body>
 		<header>
 			<h1>Dalton's Diner</h1>
+			<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+			
+			<style>
+				.required{
+					font-weight: bold;
+					color: #df9f4f;
+				}
+				
+				div {
+					
+					color: #d94;
+					text-align: center;
+				}
+				
+				body{
+				background-color: #6d6a6f;
+				color: eaedef;
+			
+				
+				}
+				
+				#dropdown{
+					display: block;
+					margin: auto;
+					text-align: center;
+				}
+				
+				input, textarea{
+					margin-bottom: 10px
+				}
+			
+			</style>
 		</header>
 		
 		<nav>
-			<hr />
 			<p><a href="index.html">Home</a>
 			<a href="menu.html">Menu</a>
 			<a href="contact.html">Contact Us</a>
 			</p>
-			<hr />
 		</nav>
 		
 		<form action="submit.html" method="POST">
 		
 		<!-- text inputs-->
-		<div>
-			<label for="name">Name:</label>
+		<div class="required" >
+			<label for="name" >Name:</label>
 			<input type="text" id="name" name="name"><br />
 		
 			<label for="email">Email:</label>
 			<input type="text" id="email" name="email"><br />
 		
-			<label for="phone">Phone Number:</label>
+			<label for="phone">Phone:</label>
 			<input type="text" id="phone" name="phone"><br />
 		</div>
 		
 		<!--Drop-down bar -->
 		</div>
-			<label for="reason">Reason for Inquiry:</label>
-			<select id="reason" name="reason">
+			<label id="dropdown"class="required" for="reason">Reason for Inquiry:</label>
+			<select id="dropdown" id="reason" name="reason">
 			<option value="catering" selected>Catering</option>
 			<option value="privateParty">Private Party</option>
 			<option value="feedback">Feedback</option>
@@ -65,7 +95,7 @@
 		
 		<!--Checkboxs-->
 		<div>
-			<label for="days">Best Days to contact you:</label>
+			<label class="required" for="days">Best Days to contact you:</label>
 			<input type="checkbox" id="m" name="days" value="m">
 			<label for="m">M</label>
 			<input type="checkbox" id="t" name="days" value="t">
@@ -85,8 +115,7 @@
 		
 
 		<footer>
-			<hr />
-			<p>741 Carterway Rd, Arlington, Texas, 76015<br />817-555-0145</p>
+			<p>741 Carter Way Rd, Arlington, Texas, 76015<br />817-555-0145</p>
 		</footer>
 		
 	</body>

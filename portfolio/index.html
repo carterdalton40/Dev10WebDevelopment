@@ -8,24 +8,56 @@
 <html lang="en">
  <head>
   <title>Dalton Carter's Portfolio</title>
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <style>
+	
+	caption {
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-bottom: 8px;
+		}
+		
+	table, th, td {
+		border: 1px solid #0d1f2d;
+		border-collapse: collapse;
+		padding: 5px 10px;
+	}
+	
+	table {
+		width: 90%;
+		margin: auto;
+	}
+	
+	tr {
+		height: 30px;
+	}
+	
+	th {
+		background-color: #546a7b;
+		color: #f2eded;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: #e4c3ad;
+	}
+
+  </style>
  </head>
 	<body>
 	 <header>
 	 <h1> Portfolio for Dalton Carter</h1>
 	 </header>
 	
-	  <nav>
-	    <hr/>
-		
+	  <nav class="border">
 		<p> <a href="projects.html">Projects</a> 
 			<a href="contact.html">Contact</a>
 		    <a href="testimonials.html">Testimonials</a> </p>
-		<hr />
-	  </nav>
+			<div class="clear-float"></div>
+	 </nav>
 	  
 		
 		  <section>
-		   <article id="about-me">
+		   <article class="border" id="about">
 			  <h2><em> About Me </em></h2>
 			  <img src = "images/linkedinprofilepic.jpg" alt="Portrait of Dalton Carter" />
 			  <p>My name is Dalton Carter. I am a recent graduate of the <span style="background-color: lightgreen; border: thin solid gold">Univeristy
@@ -33,41 +65,46 @@
 			  to develop my skills in <strong>C#</strong>.</p>
 			  <p>UNCC also helped me develop strong skills in <strong>Java</strong> and <strong>C++</strong>. Apart from my main skills, I also have experience in <strong>HTML, XML, </strong>and <strong>Lua</strong>. Version control played a key role in my game design classes,
 			  so I am also very familiar with Git.</p>
+			  <div class="clear-float"></div>
 		   </article>
 		   
-		    <article id="past-experiences">
+		    <article id="experience">
 			  <h2><em> Past Experiences</em></h2>
 			  <img src="images/graduation.jpg" alt="Image of college graduates" />
 			  
-			  <table>
+			<div class="right-content">
+			 <table>
 			  <caption>Employment History</caption>
+			  <thead>
+				<tr>
+				<th>Years of Employment</th>
+				<th>Title</th>
+				<th>Company</th>
+				</tr>
+			  </thead>
 			  
-			  <tr>
-			  <th>Years of Employment</th>
-			  <th>Title</th>
-			  <th>Company</th>
-			  </tr>
-			  
-			  <tr>
-			  <td>2015-Present</td>
-			  <td>Clerk</td>
-			  <td>QuikTrip</td>
-			  </tr>
-			  
-			  <tr>
-			  <td>2014-2018</td>
-			  <td>Student</td>
-			  <td>Univeristy of North Carolina at Charlotte</td>
-			  </tr>
-			  
-			  </table>
-			  
+			  <tbody>
+				<tr>
+				<td>2015-Present</td>
+				<td>Clerk</td>
+				<td>QuikTrip</td>
+				</tr>
+				
+				<tr>
+				<td>2014-2018</td>
+				<td>Student</td>
+				<td>Univeristy of North Carolina at Charlotte</td>
+				</tr>
+			  </tbody>
+			 </table>
+			</div>
+			  <div class="clear-float"></div>
 			</article>
 			
 			<article id="hobbies">
 			  <h2><em> Hobbies</em></h2>
 			  <img src="images/soccer.jpg" alt="Picture of a soccer ball" />
-			  
+			  <div class="right-content">
 			  <ul>
 			  
 					<li>Video Games</li>
@@ -85,13 +122,12 @@
 					</ul>
 					
 			  </ul>
-			  
-			  
+			  </div>
+			  <div class="clear-float"></div>
 			</article>
 		  </section>
 		  
 		  <footer>
-			<hr />
 			<p>&copy; 2018 Dalton Carter. All rights reserved.</p>
 		  </footer>
 		
