@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+	Name: Dalton Carter
+	Date Created: 09/15/18
+	Most recent revision: 09/24/18
+-->
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Dalton's Diner</h1>
+			<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+			
+			<style>
+				.required{
+					font-weight: bold;
+					color: #df9f4f;
+				}
+				
+				div {
+					
+					color: #d94;
+					text-align: center;
+				}
+				
+				body{
+				background-color: #6d6a6f;
+				color: eaedef;
+			
+				
+				}
+				
+				#dropdown{
+					display: block;
+					margin: auto;
+					text-align: center;
+				}
+				
+				input, textarea{
+					margin-bottom: 10px
+				}
+			
+			</style>
+		</header>
+		
+		<nav>
+			<p><a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contact.html">Contact Us</a>
+			</p>
+		</nav>
+		
+		<form action="submit.html" method="POST">
+		
+		<!-- text inputs-->
+		<div class="required" >
+			<label for="name" >Name:</label>
+			<input type="text" id="name" name="name"><br />
+		
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email"><br />
+		
+			<label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone"><br />
+		</div>
+		
+		<!--Drop-down bar -->
+		</div>
+			<label id="dropdown"class="required" for="reason">Reason for Inquiry:</label>
+			<select id="dropdown" id="reason" name="reason">
+			<option value="catering" selected>Catering</option>
+			<option value="privateParty">Private Party</option>
+			<option value="feedback">Feedback</option>
+			<option value="other">Other</option>
+			</select><br />
+		</div>
+			
+		<!--Addition Info textarea -->
+		<div>
+			<label for="info">Additional Information:</label>
+			<textarea id="info" name="info"></textarea><br />
+		</div>
+	
+		<!--Radio buttons -->
+		<div>
+			<label for="beenTo">Have you ever been to the resaurant?</label>
+			<input type="radio" id="choice" name="beenTo" value="no">
+			<label for="choice1">No</label>
+			<input type="radio" id="choice2" name="beenTo" value="yes">
+			<label for="choice2">Yes</label><br />
+		</div>
+		
+		<!--Checkboxs-->
+		<div>
+			<label class="required" for="days">Best Days to contact you:</label>
+			<input type="checkbox" id="m" name="days" value="m">
+			<label for="m">M</label>
+			<input type="checkbox" id="t" name="days" value="t">
+			<label for="t">T</label>
+			<input type="checkbox" id="w" name="days" value="w">
+			<label for="w">W</label>
+			<input type="checkbox" id="th" name="days" value="th">
+			<label for="th">Th</label>
+			<input type="checkbox" id="f" name="days" value="f">
+			<label for="f">F</label><br />
+		</div>
+		
+		<!--Submit button-->
+		<div>
+			<input type="submit" id="submit" name="submit" value="Send Request">
+		<div>
+		
+
+		<footer>
+			<p>741 Carter Way Rd, Arlington, Texas, 76015<br />817-555-0145</p>
+		</footer>
+		
+	</body>
+</html>
