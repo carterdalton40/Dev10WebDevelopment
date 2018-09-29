@@ -19,7 +19,7 @@ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLP
 			padding-bottom: 12px;
 		}
 		
-		nav .btn{
+		nav .btn, .card-header .btn{
 			background-color: #5b7d87;
 			color: #fef9ff;
 		}
@@ -45,6 +45,46 @@ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLP
 	<div class="container">
 	
 		<div class="row">
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="portfolio01">
+						<h5 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse" 
+data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							My First Portfolio Piece
+							</button>
+						</h5>
+					</div>
+					
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							<p><a href="" target="_blank">Name of Website</a></p>
+							<figure><img src="images/website-1778529.jpg" alt="Screenshot of home page" /></figure>
+						</div>
+					</div>
+						
+				</div>
+				
+				<div class="card">
+					<div class="card-header" id="portfolio02">
+						<h5 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse"
+data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							My Second Portfolio Piece
+							</button>
+						</h5>
+					</div>
+					
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							<p><a href="" target="_blank">Name of the second website</a></p>
+							<figure><img src="images/smile.jpg" alt="Picture to act as a screenshot" /></figure>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<div class="col-lg-3 col-md">
 			<img src="images/smile.jpg" alt="photo of Marci Kitzmiller" class="img-fluid" />
 			</div>
